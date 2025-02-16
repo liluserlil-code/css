@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* *{
+    padding: 0;
+    margin: 0;
+/* } /* так можно по умолчанию обнулить все отступы */
+
+
+/* обращение к тегу */
+body{
+    background-color: rgb(219, 210, 194);
+
+    /* font-size: 16px;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif; */
+                                             /* можно писать и так и так */
+    font: normal 20px 'Roboto', sans-serif;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+a:active{
+    color: blue;
+}
+a:visited{
+    color: gray;
+}
+
+
+
+h1{
+    color: rgb(41, 39, 43);
+}
+
+/* если вместо class юзать id то вместо точки должна стоять решетка 
+(примечание: классы лучше юзать если таких объектов много) */
+.avatar{
+    width: 400px; 
+    border-radius:  28px; /* скругление краев */
+    box-shadow: -5px -5px 14px rgba(0 0 0 / 25%);
+}
+
+.info p{
+    color: rgb(126, 121, 132);
+    margin: 0; /* это отступ между строками в блоке */
+    font-style: italic;
+    /* text-decoration: ; навешивание декораций */
+    /* text-transform: ; для трансформации текста */
+    /* letter-spacing: ; расстояние в пикселях между буквами */
+    /* word-spacing: ;  количество пространства между разными словами */
+
+}
+.info{
+    display: flex;
+    margin-bottom: 20px;
+}
+.info-text{
+    margin-left: 40px;
+}
+
+@media (max-width: 900px) {
+    .info{
+        text-align: center;
+        display: block;
+    }
+}
+
+/* Box model */
+.main{
+    padding-top: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+.social_networks{
+    background: red;
+    padding: 15px 40px;  /* верхний и нижний отступы - левое число, левый и правый - правое; если 4 числа, то по часовой стрелке*/
+    border: 5px solid gray;
+    margin: 5px;
+}
+
+/* .box-model > div{ > этот символ значит что только дочерние блоки могут принимать этот стиль
+    float: left;
+    background: black;
+    height: 200px;
+    border: 4px solid red;
+    width: 25%;
+    box-sizing: border-box;
+} */
+/* .bg-yellow{
+    background: #fff9dc;
+}
+.bg-green{
+    background: #e5ffe7;
+}
+.bg-red{
+    background: #ffe5e5;
+} */
+.card{
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: -5px -5px 14px rgba(0 0 0 / 25%);
+    background-color: beige;
+}
+.card h2{
+    margin-bottom: 10px;
+}
+
+.hobbys{
+    padding: 0 20px;
+    list-style: none;
+}
+
+.table{
+     width: 100%;
+}
+
+.table td{
+    padding-bottom: 10px;
+}
+
+.table td:nth-child(2), 
+.table td:nth-child(3){ /* псевдо селекторы */
+    color: gray;
+}
+
+/* .table tr:nth-child(odd), для выбора четных и нечетных строк
+.table tr:nth-child(even){
+    background-color: brown;
+}*/
+
+.link-list{
+    list-style: none;
+}
+
+.link-list li{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.contact h2 {
+    text-align: center;
+
+}
+
+.form-group label{
+    display: block;  /* эта штука нужна для того чтобы превратить строку в блок */
+    /* font-size: 14px;
+    color: black; */
+}
+
+.form-group input,
+.form-group textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #c5b6b6;
+    color: black;
+    padding: 10px 0 10px;
+    outline: none;
+    font-family: inherit; /* inherit означает что шрифт был исправлен */
+
+}
+
+.row{
+    display: flex;
+    margin-bottom: 20px;
+    /* display: none; */  /* визуально убираем элементы из документа */
+}
+
+.row > .form-group{
+    width: 50%;
+    /* margin-right: 20px; */
+}
+
+.row > .form-group:first-child{
+    margin-right: 20px;
+}
+
+.button{
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    background-color: #111;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.button:hover{
+    opacity: 0.9;
+}
+
+/* Позиционирование в CSS */
+
+ /* .position{
+    position: relative;
+    border: 4px solid black;
+    margin-top: 40px;
+    padding: 20px;
+    height: 300px;
+ }
+
+ .box{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: lightcoral;
+    bottom: 0; 
+ } */

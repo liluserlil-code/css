@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML project</title>
+  <link rel="stylesheet" href="styles.css"> <!-- rel - тип подключаемого файла -->
+</head>
+<body>
+    <div class="main">
+        <!-- cellspacing для того чтобы было разделение между строками и столбцами в таблице -->
+        <!-- <table cellspacing="18">
+            <td><img src="images.jpeg" alt="тут моя фотка" class="avatar"></td> так вставляются картинки из локалки, width это ширина картинки -->
+            <!-- <td><h1>Константин Филиппов</h1>
+
+                <p><em>Щас учу HTML</em></p>
+            
+            </td>
+        </table> -->
+        <div class="info">
+            <img src="images.jpeg" alt="тут моя фотка" class="avatar"></td><!-- так вставляются картинки из локалки, width это ширина картинки -->
+            <div class="info-text">
+                <h1>Константин Филиппов</h1>
+                <p>Щас учу <strong>HTML + CSS</strong></p>
+            
+                <h4>Мои соц сети</h4>
+                    <!-- <a> для того чтобы текст преватить в ссылку, а target="_blank" для того чтобы ссылка открывалась в новой вкладке  -->
+                    <a href="https://www.youtube.com/watch?v=DOEtVdkKwcU&list=PLqKQF2ojwm3mkPKGH4DRf3CZnmolnIALR&index=3" target="_blank">YT</a>
+                    <!-- порядок атрибутов не важен -->
+            </div>
+        </div>
+            
+        <div class="card bg-yellow">
+            <h2>Мои хобби</h2>
+            <ol class="hobbys"><!-- это упорядоченный список -->
+                <li>Прогать</li>
+                <li>Играть</li>
+                <li>Зарабатывать деньги</li>
+            </ol>
+        </div>
+        <div class="card bg-green">
+            <h2>Видосы которые мне надо выучить</h2>
+            <ul class="link-list">
+                <li><a href="https://www.youtube.com/watch?v=hTWKbfoikeg">видос про JS</a></li>
+            </ul>
+            <!-- для создания многостраничных сайтов ссылку надо оставить на тот файл, где страница на которую нужно перейти -->
+        </div>
+        <div class="card bg-red">
+            <h2>Опыт работы</h2>
+            <!-- с помощью таблиц можно делать лейауты(разметку страницы)-->
+            <table class="table"> <!-- так создается таблица tr - строки, а td - столбцы-->
+                <tr>
+                    <td>microsoft</td> 
+                    <td>engineer</td> 
+                    <td>2045 - 2050</td> 
+                </tr>
+                <tr> 
+                    <td>google</td> 
+                    <td>CEO</td> 
+                    <td>2030 - 2040</td> 
+                </tr>
+                <tr> 
+                    <td>avito</td> 
+                    <td>CEO</td> 
+                    <td>2025 - 2030</td> 
+                </tr>
+            </table>
+
+        </div>
+        <div class="contact">
+            <h2>Связаться со мной</h2>
+            <form action="/"> <!-- label - просто текст  input - поле для ввода(этих типов очень много, там не только text)  placeholder - текст для подсказок  for и id - если они одинаковые то при нажатии на текст переносит на поле для инпута-->
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя: </label>
+                        <input type="text" id="name" placeholder="Введите имя...">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Ваша почта: </label>
+                        <input type="text" id="email" placeholder="Введите почту...">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="text">Ваше сообщение: </label>
+                    <textarea name="" id="text"></textarea> <!-- тоже что то вроде кнопки -->
+                </div>
+                <input class="button" type="submit" value="Связаться">
+            </form>
+        </div>
+        <!-- <div class="box-model">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div> -->
+        <!-- <div class="position">
+            <div class="box">
+
+            </div>
+        </div> -->
+    </div>
+</body>
+</html>
